@@ -36,7 +36,7 @@ export default function BlobForm() {
       <p className="max-w-prose">
         Search Walrus blobs by ID, and display them on this page. See the <a href="https://docs.walrus.site/usage/web-api.html#public-services" target="_blank" className="text-blue-500 underline hover:cursor-pointer hover::text-blue-800">Walrus</a> documentation for more information.
       </p>
-      <Form {...form}>
+      <Form {...form} className="w-full">
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className="flex flex-col gap-4 w-full"
