@@ -60,7 +60,7 @@ export default function Home() {
           Walrus View Blob
         </h1>
         <p>
-          An example searching and display images using the Walrus API.
+          An example searching and display images using the Walrus HTTP API.
         </p>
       </div>
       <div className="w-full flex flex-col items-center lg:gap-4 lg:flex-row lg:justify-around ">
@@ -69,7 +69,7 @@ export default function Home() {
             Search blobs
           </h2>
           <p className="max-w-prose">
-            Upload blobs to Walrus, and display them on this page. See the Walrus documentation for more information. The file size is limited to 10 MiB on the default publisher. Use the CLI tool to store bigger files.
+            Search Walrus blobs by ID, and display them on this page. See the <a href="https://docs.walrus.site/usage/web-api.html#public-services" target="_blank" className="text-blue-500 underline hover:cursor-pointer hover::text-blue-800">Walrus</a> documentation for more information.
           </p>
           <Form {...form}>
             <form
@@ -111,7 +111,7 @@ export default function Home() {
               <CardFooter>
                 <a href={`https://aggregator-devnet.walrus.space/v1/${blobId}`} className="w-full">
                   <Button className="w-full" variant={'secondary'}>
-                    Download
+                    Download image
                   </Button>
                 </a>
               </CardFooter>
