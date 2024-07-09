@@ -9,23 +9,8 @@ import Image from "next/image";
 
 export default function BlobDisplay() {
   const searchParams = useSearchParams()
-  const [blobId, setBlobId] = useState<string | null>(null);
 
-  useEffect(() => {
-    let blobId = searchParams.get('blob_id');
-    console.log('blobId', blobId);
-    if (blobId) {
-      setBlobId(blobId);
-
-      fetch(`https://aggregator-devnet.walrus.space/v1/${blobId}`).then((response) => {
-        return response.json();
-      }).then((data) => {
-        console.log(data);
-      });
-
-    }
-  }, []);
-  
+  const blobId = searchParams.get('blobId') || null;
 
   if (!blobId) {
     return null;
@@ -42,7 +27,6 @@ export default function BlobDisplay() {
         height={200}
         onError={() => {
           toast.error("Blob not found. Please try a valid blob id.")
-          setBlobId(null);
         }}
       />
       <CardFooter>

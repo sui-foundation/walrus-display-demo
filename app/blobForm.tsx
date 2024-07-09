@@ -25,7 +25,7 @@ export default function BlobForm() {
 
     console.log(values);
 
-    window.location.href = `/?blob_id=${values.blobId}`
+    window.location.href = `/?blobId=${values.blobId}`
   }
 
   return (
