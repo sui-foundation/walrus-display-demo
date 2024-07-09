@@ -19,7 +19,7 @@ export default function BlobDisplay() {
 
   return (
     <Card className="w-full max-w-lg h-full">
-      <Image 
+      <img 
         className="p-1 w-full h-full object-contain rounded-lg"
         src={`https://aggregator-devnet.walrus.space/v1/${blobId}`}
         alt="Blob image"
