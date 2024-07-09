@@ -25,6 +25,11 @@ export default function BlobDisplay() {
 
     }
   }, []);
+  
+
+  if (!blobId) {
+    return null;
+  }
 
 
   return (
