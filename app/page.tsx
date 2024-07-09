@@ -1,6 +1,7 @@
 import BlobForm from "./blobForm";
 import BlobDisplay from "./blobDisplay";
 import { Suspense } from "react";
+import { Github } from "lucide-react";
 
 
 
@@ -10,6 +11,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center px-4 py-4">
+      <a href="https://github.com/sui-foundation/walrus-display-demo" target="_blank">
+        <Github className="w-6 h-6 absolute top-2 right-2" />
+      </a>
       <div className="w-full flex flex-col items-start">
         <h1 className="text-4xl font-medium">
           Walrus View Blob
