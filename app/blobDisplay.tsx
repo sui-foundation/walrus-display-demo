@@ -21,7 +21,7 @@ export default function BlobDisplay() {
     <Card className="w-full max-w-lg h-full">
       <img 
         className="p-1 w-full h-full object-contain rounded-lg"
-        src={`https://aggregator-devnet.walrus.space/v1/${blobId}`}
+        src={`https://aggregator.walrus-testnet.walrus.space/v1/${blobId}`}
         alt="Blob image"
         width={200}
         height={200}
@@ -30,7 +30,7 @@ export default function BlobDisplay() {
         }}
       />
       <CardFooter>
-        <a href={`https://aggregator-devnet.walrus.space/v1/${blobId}`} className="w-full">
+        <a href={`https://aggregator.walrus-testnet.walrus.space/v1/${blobId}`} className="w-full">
           <Button className="w-full" variant={'secondary'}>
             Download image
           </Button>
